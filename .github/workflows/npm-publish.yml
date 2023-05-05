@@ -17,7 +17,7 @@ jobs:
           scope: '@octocat'
       - run: yarn
       - run: yarn global add typescript
-      - run: yarn tsc
+      - run: yarn build
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
