@@ -1,0 +1,17 @@
+{
+  "name": "dynamic365_msal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/msal-node": "^1.17.2",
+    "dynamics-web-api": "^1.7.8"
+  }
+}
