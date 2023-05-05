@@ -18,6 +18,8 @@ jobs:
       - run: yarn
       - run: yarn global add typescript
       - run: yarn build
+      - run: ls -ltr
+      - run: ls ./src
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
