@@ -16,6 +16,7 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@octocat'
       - run: yarn
+      - run: yarn install -g typescript
       - run: yarn tsc
       - run: yarn publish
         env:
