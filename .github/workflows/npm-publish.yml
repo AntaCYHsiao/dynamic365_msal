@@ -20,6 +20,8 @@ jobs:
       - run: yarn build
       - run: ls -ltr
       - run: ls ./src
-      - run: yarn publish
+      - run: cp ./dist/* ./
+      - run: ls -ltr
+      # - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
